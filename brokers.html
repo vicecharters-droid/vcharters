@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vice Charters — Broker Access</title>
+<meta name="description" content="Live fleet availability, specs and starting rates for Vice Charters brokers. No login required." />
+<meta name="robots" content="noindex" />
+
+<link rel="icon" href="assets/brand/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="assets/brand/logo.jpg" alt="Vice Charters logo" />
+      VICE CHARTERS
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html#fleet">Fleet</a>
+      <a href="index.html#tides">Tides</a>
+      <a href="index.html#contact">Contact Us</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="index.html#contact">Contact Vice Charters</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="min-height:56vh;">
+    <div class="container">
+      <span class="eyebrow">Broker Portal &middot; No Login Required</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.2rem);">Fleet availability &amp; rates for brokers.</h1>
+      <p class="lede">Self-serve what you need to quote a client — live availability, specs, photos and starting rates. For a hold or full quote, contact us directly; this page doesn't take bookings.</p>
+    </div>
+  </section>
+
+  <section id="broker-availability">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Availability</span>
+        <h2>Open &amp; booked dates.</h2>
+        <p>Shows busy/free only — no client names or booking details.</p>
+      </div>
+      <div class="calendar-grid">
+        <div class="calendar-card">
+          <h4>Aqua <span class="badge open">Open this week</span></h4>
+          <div class="calendar-placeholder">Google Calendar embed goes here.<br />Set to show "busy/free" only — see README.</div>
+        </div>
+        <div class="calendar-card">
+          <h4>Mistral <span class="badge open">Open this week</span></h4>
+          <div class="calendar-placeholder">Google Calendar embed goes here.<br />Set to show "busy/free" only — see README.</div>
+        </div>
+        <div class="calendar-card">
+          <h4>Sea Ray <span class="badge open">Open this week</span></h4>
+          <div class="calendar-placeholder">Google Calendar embed goes here.<br />Set to show "busy/free" only — see README.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="broker-fleet">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Fleet &amp; Starting Rates</span>
+        <h2>Specs brokers actually need.</h2>
+      </div>
+
+      <div class="fleet-grid">
+        <article class="boat-card">
+          <div class="cover"><img src="assets/aqua/aqua_01.jpg" alt="Aqua yacht" loading="lazy" /></div>
+          <div class="body">
+            <h3>Aqua</h3>
+            <div class="boat-specs">
+              <span><b>Length</b> <span class="placeholder-spec">[add ft]</span></span>
+              <span><b>Guests</b> <span class="placeholder-spec">[add capacity]</span></span>
+            </div>
+            <div class="boat-rate"><span>Starting rate</span><span>Contact us</span></div>
+          </div>
+        </article>
+        <article class="boat-card">
+          <div class="cover"><img src="assets/mistral/mistral_01.jpg" alt="Mistral yacht" loading="lazy" /></div>
+          <div class="body">
+            <h3>Mistral</h3>
+            <div class="boat-specs">
+              <span><b>Length</b> <span class="placeholder-spec">[add ft]</span></span>
+              <span><b>Guests</b> <span class="placeholder-spec">[add capacity]</span></span>
+            </div>
+            <div class="boat-rate"><span>Starting rate</span><span>Contact us</span></div>
+          </div>
+        </article>
+        <article class="boat-card">
+          <div class="cover"><img src="assets/sea-ray/sea_ray_01.jpg" alt="Sea Ray yacht" loading="lazy" /></div>
+          <div class="body">
+            <h3>Sea Ray</h3>
+            <div class="boat-specs">
+              <span><b>Length</b> <span class="placeholder-spec">[add ft]</span></span>
+              <span><b>Guests</b> <span class="placeholder-spec">[add capacity]</span></span>
+            </div>
+            <div class="boat-rate"><span>Starting rate</span><span>Contact us</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Need a hold or full quote?</h2>
+          <p>Message the Vice Charters team directly — this portal is availability &amp; specs only.</p>
+        </div>
+        <a href="index.html#contact" class="btn btn-primary">Contact Vice Charters</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="brand"><img src="assets/brand/logo.jpg" alt="Vice Charters" style="height:28px;" /> VICE CHARTERS</div>
+    <div class="footer-links">
+      <a href="index.html">Main Site</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div>&copy; <span id="year"></span> Vice Charters. Broker access only — no client or pricing detail beyond starting rates is shown here.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

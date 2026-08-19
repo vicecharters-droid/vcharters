@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vice Charters — Team</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="assets/brand/favicon-32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- GATE: this is a light deterrent only, NOT real security. Anyone who views this
+     page's source can read the passphrase below. Do not put anything here that would
+     be a problem if a stranger saw it — real private data (leads, client info, full
+     rate cards) belongs in your private Google Sheet / Calendar, linked below, which
+     has real Google-account-level access control. See README.md → "About internal.html". -->
+
+<div class="gate-wrap" id="gate">
+  <div class="gate-card">
+    <img src="assets/brand/logo.jpg" alt="Vice Charters" style="height:48px; margin:0 auto 18px; border-radius:8px;" />
+    <h3 style="margin-bottom:6px;">Team Access</h3>
+    <p style="color:var(--text-mid); font-size:0.92rem; margin:0;">Vice Charters internal quick-links.</p>
+    <input type="password" id="gate-input" placeholder="Passphrase" />
+    <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="checkGate()">Enter</button>
+    <p class="gate-warning">This is a soft gate for convenience, not real security — anyone with the page source can bypass it. Never store client data, passwords or financial info directly on this page. Keep sensitive info in your private Google Sheet / Calendar linked inside.</p>
+  </div>
+</div>
+
+<div id="internal-content">
+  <header class="site-header" style="position:static; background:transparent; backdrop-filter:none; border:none;">
+    <nav class="nav">
+      <a href="index.html" class="brand">
+        <img src="assets/brand/logo.jpg" alt="Vice Charters logo" />
+        VICE CHARTERS <span style="color:var(--text-low); font-weight:500;">/ Team</span>
+      </a>
+      <div></div>
+      <div class="nav-cta"><a class="btn btn-outline btn-sm" href="index.html">← Public site</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section style="padding-top:24px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Internal</span>
+          <h2>Quick links.</h2>
+          <p>Everything that's actually private (leads, full rate card, client details, financials) lives off this website, in tools only you and Frank have Google-account access to. This page is just a fast bookmark hub.</p>
+        </div>
+
+        <div class="fleet-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px,1fr));">
+          <div class="contact-card">
+            <div class="label">Lead Tracker</div>
+            <p style="color:var(--text-mid); font-size:0.9rem;">Your private Google Sheet — inquiries, status, follow-ups.</p>
+            <a class="btn btn-teal btn-sm" href="#" target="_blank" rel="noopener">Open Lead Tracker →</a>
+            <p style="font-size:0.78rem; color:var(--text-low); margin-top:8px;">Paste your Google Sheet link into this button's href in internal.html.</p>
+          </div>
+          <div class="contact-card">
+            <div class="label">Master Rate Card</div>
+            <p style="color:var(--text-mid); font-size:0.9rem;">Full internal rates, costs and margins by boat.</p>
+            <a class="btn btn-teal btn-sm" href="#" target="_blank" rel="noopener">Open Rate Card →</a>
+            <p style="font-size:0.78rem; color:var(--text-low); margin-top:8px;">Link this to your private rate sheet.</p>
+          </div>
+          <div class="contact-card">
+            <div class="label">Company Google Calendar</div>
+            <p style="color:var(--text-mid); font-size:0.9rem;">The private, full-detail calendar (not the public embed).</p>
+            <a class="btn btn-teal btn-sm" href="https://calendar.google.com" target="_blank" rel="noopener">Open Calendar →</a>
+          </div>
+          <div class="contact-card">
+            <div class="label">Photo Library</div>
+            <p style="color:var(--text-mid); font-size:0.9rem;">Google Photos albums, organized per boat.</p>
+            <a class="btn btn-teal btn-sm" href="#" target="_blank" rel="noopener">Open Photos →</a>
+          </div>
+          <div class="contact-card">
+            <div class="label">Broker Database</div>
+            <p style="color:var(--text-mid); font-size:0.9rem;">Active brokers, commission terms, contact info.</p>
+            <a class="btn btn-teal btn-sm" href="#" target="_blank" rel="noopener">Open Broker Sheet →</a>
+          </div>
+          <div class="contact-card">
+            <div class="label">Public Site &amp; Broker Page</div>
+            <p style="color:var(--text-mid); font-size:0.9rem;">What everyone else sees.</p>
+            <a class="btn btn-outline btn-sm" href="index.html">Main Site</a>
+            <a class="btn btn-outline btn-sm" href="brokers.html" style="margin-top:8px;">Broker Page</a>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top:64px;">
+          <span class="eyebrow">Reminders</span>
+          <h2>Things not to forget.</h2>
+        </div>
+        <div class="nudge-list">
+          <div class="nudge"><b>Finalize dinner-on-yacht pricing</b> — highest-value open item; every inquiry without an answer is a lost booking.</div>
+          <div class="nudge"><b>Set the public Google Calendars to "busy/free only"</b> before wiring the embed on the broker page.</div>
+          <div class="nudge"><b>Fill in real specs &amp; rates</b> on index.html and brokers.html — currently placeholders.</div>
+          <div class="nudge"><b>Confirm the 4th boat</b> (if there is one) and add it to the fleet grid.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script>
+  function checkGate() {
+    var val = document.getElementById("gate-input").value;
+    // Soft deterrent only — change this passphrase in internal.html. Not real security.
+    if (val === "vicecharters") {
+      document.getElementById("gate").style.display = "none";
+      document.getElementById("internal-content").style.display = "block";
+    } else {
+      alert("Incorrect passphrase.");
+    }
+  }
+  document.getElementById("gate-input").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") checkGate();
+  });
+</script>
+</body>
+</html>
